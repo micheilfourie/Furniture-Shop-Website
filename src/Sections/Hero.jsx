@@ -1,69 +1,77 @@
-import { useState, useEffect } from "react"
-import { Hero1, Hero2 } from "../assets/index.js"
+import { useState, useRef } from "react";
+import { Hero1, Hero2 } from "../assets/index.js";
 import { HeroSlide } from "../Components";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const slides = [Hero1, Hero2, Hero1, Hero2]
+const slides = [Hero1, Hero2, Hero1, Hero2];
 
 const Hero = () => {
 
-    const [slide, setSlide] = useState(0);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const sliderRef = useRef(null);
 
-    useEffect(() => {
+    const sliderSettings = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 800,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        beforeChange: (current, next) => {
+            setActiveIndex(next);
+        },
+        dots: false,
+    };
 
-        const interval = setInterval(() => {
-            handleSlideChange('next');
-        }, 7000);
+    const handlePrevSlide = () => {
+        sliderRef.current.slickPrev();
+    };
 
-        return () => clearInterval(interval);
+    const handleNextSlide = () => {
+        sliderRef.current.slickNext();
+    };
 
-    }, [slide]);
-
-    const handleSlideChange = (direction) => {
-        setSlide((prevSlide) => {
-            if (direction === "next") {
-                return (prevSlide + 1) % slides.length;
-            } else {
-                return prevSlide === 0 ? slides.length - 1 : prevSlide - 1;
-            }
-        });
+    const handleDotClick = (index) => {
+        sliderRef.current.slickGoTo(index);
+        setActiveIndex(index);
     };
 
     return (
-        <section className="w-full pt-[80px] max-w-screen-2xl mx-auto overflow-hidden">
+        <section className="w-full pt-[80px] max-w-screen-2xl mx-auto overflow-hidden relative">
 
-            <div
-                className="w-full flex transition-transform duration-1000 ease-in-out"
-                style={{ transform: `translateX(-${slide * 100}%)` }}
-            >
+            <Slider ref={sliderRef} {...sliderSettings} className="w-full relative">
                 {slides.map((image, index) => (
                     <HeroSlide key={index} image={image} />
                 ))}
-            </div>
+            </Slider>
 
-            <div className="flex justify-center items-center my-2">
+            <button
+                className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2 p-4 text-gray-400 hover:text-orange"
+                onClick={handlePrevSlide}
+            >
+                <ChevronLeftIcon className="h-8 w-8" />
+            </button>
 
-                <button onClick={() => handleSlideChange('prev')} className="hover:cursor-pointer p-4 hover:text-orange text-gray-400">
-                    <ChevronLeftIcon className="size-8 transition-colors ease-in-out duration-200" />
-                </button>
+            <button
+                className="absolute top-1/2 right-0 z-10 transform -translate-y-1/2 p-4 text-gray-400 hover:text-orange"
+                onClick={handleNextSlide}
+            >
+                <ChevronRightIcon className="h-8 w-8" />
+            </button>
 
+            <div className="flex justify-center items-center my-2 absolute bottom-10 right-10">
                 {slides.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-3 h-3 rounded-full transition-all duration-300 hover:cursor-pointer p-1 mx-[5px] ${slide === index ? "bg-orange scale-150" : "bg-gray-400"
-                            }`}
-                        onClick={() => setSlide(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 mx-[3px] ${activeIndex === index ? "bg-orange scale-[1.4]" : "bg-gray-400"}`}
                     />
                 ))}
-
-                <button onClick={() => handleSlideChange('next')} className="hover:cursor-pointer p-4 hover:text-orange text-gray-400">
-                    <ChevronRightIcon className="size-8 transition-colors ease-in-out duration-200" />
-                </button>
-
             </div>
-
         </section>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;

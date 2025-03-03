@@ -1,5 +1,5 @@
 import { Navbar } from "../Components/index.js";
-import { Hero } from "../Sections/index.js"
+import { Hero, Banner, FeaturedProducts } from "../Sections/index.js"
 
 
 const Home = () => {
@@ -7,6 +7,8 @@ const Home = () => {
         <>
             <Navbar />
             <Hero />
+            <Banner />
+            <FeaturedProducts />
         </>
     )
 }
