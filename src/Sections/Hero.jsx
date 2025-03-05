@@ -3,8 +3,6 @@ import { Hero1, Hero2 } from "../assets/index.js";
 import { HeroSlide } from "../Components";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const slides = [Hero1, Hero2, Hero1, Hero2];
 
@@ -17,7 +15,7 @@ const Hero = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        speed: 800,
+        speed: 1000,
         autoplay: true,
         autoplaySpeed: 7000,
         beforeChange: (current, next) => {
@@ -34,13 +32,8 @@ const Hero = () => {
         sliderRef.current.slickNext();
     };
 
-    const handleDotClick = (index) => {
-        sliderRef.current.slickGoTo(index);
-        setActiveIndex(index);
-    };
-
     return (
-        <section className="w-full pt-[80px] max-w-screen-2xl mx-auto overflow-hidden relative">
+        <section className="w-full pt-[80px] mx-auto overflow-hidden relative max-w-[2560px]">
 
             <Slider ref={sliderRef} {...sliderSettings} className="w-full relative">
                 {slides.map((image, index) => (

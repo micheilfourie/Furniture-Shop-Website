@@ -1,8 +1,8 @@
 import { ButtonMain } from "./index.js"
 
-const HeroSlide = ({ image, slide, index }) => {
+const HeroSlide = ({ image }) => {
     return (
-        <div className={`min-w-full relative ${slide === index ? "opacity-100" : "opacity-0"} transition-opacity duration-[1500ms] ease-in-out`}>
+        <div className={`min-w-full relative`}>
 
             <div className="w-full flex justify-center">
                 <img src={image} alt="HeroImg1" className="w-full h-full object-fill object-center" />

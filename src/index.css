@@ -7,7 +7,7 @@
 
   --color-red: #C87065;
   --color-orange: #C9A065;
-  --color-white: #F7F7F6;
+  --color-offwhite: #F7F7F6;
   --color-black: #424243;
 
   --font-lato: 'Lato', sans-serif;
@@ -24,23 +24,13 @@ p {
   font-family: var(--font-montserrat);
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 1em;
+*{
+  box-sizing: border-box;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-orange);
-  cursor: pointer;
+html,body {
+  scroll-behavior: smooth;
+  background-color: var(--color-offwhite);
+  margin: 0;
+  padding: 0;
 }
