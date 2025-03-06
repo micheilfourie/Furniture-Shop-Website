@@ -1,25 +1,26 @@
-
 const ItemTag = ({ tagType }) => {
+  switch (tagType) {
+    case "new":
+      return (
+        <div
+          className={`bg-orange flex items-center justify-center rounded-lg px-2 py-1`}
+        >
+          <p className="text-sm text-white">New</p>
+        </div>
+      );
 
-    switch (tagType) {
+    case "sale":
+      return (
+        <div
+          className={`bg-red flex items-center justify-center rounded-lg px-2 py-1`}
+        >
+          <p className="text-sm text-white">Sale</p>
+        </div>
+      );
 
-        case "new":
-            return (
-                <div className={`bg-orange py-1 px-2 flex justify-center items-center rounded-lg`}>
-                    <p className="text-sm text-white">New</p>
-                </div>
-            );
-
-        case "sale":
-            return (
-                <div className={`bg-red py-1 px-2 flex justify-center items-center rounded-lg`}>
-                    <p className="text-sm text-white">Sale</p>
-                </div>
-            );
-
-        default:
-            return null;
-    }
+    default:
+      return null;
+  }
 };
 
-export default ItemTag
+export default ItemTag;

@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/index.js";
 
 const ShoppingCart = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default ShoppingCart
+export default ShoppingCart;

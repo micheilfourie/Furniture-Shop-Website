@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/index.js";
 
 const About = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default About
+export default About;

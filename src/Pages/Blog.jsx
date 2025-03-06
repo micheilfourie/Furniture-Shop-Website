@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/index.js";
 
 const Blog = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default Blog
+export default Blog;

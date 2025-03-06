@@ -11,5 +11,23 @@ import ProductCardActions from "./ProductCardActions.jsx";
 import DiscountSlide from "./DiscountSlide.jsx";
 import TimedDiscount from "./TimedDiscount.jsx";
 import CatagoryButton from "./CatagoryButton.jsx";
+import BlogCard from "./BlogCard.jsx";
+import BrandBanner from "./BrandBanner.jsx";
 
-export { Navbar, BurgerButton, NavMenuLink, ButtonMain, HeroSlide, CustomHeading, ProductCard, ItemTag, Rating, ProductCardActions, DiscountSlide, TimedDiscount, CatagoryButton };
+export {
+  Navbar,
+  BurgerButton,
+  NavMenuLink,
+  ButtonMain,
+  HeroSlide,
+  CustomHeading,
+  ProductCard,
+  ItemTag,
+  Rating,
+  ProductCardActions,
+  DiscountSlide,
+  TimedDiscount,
+  CatagoryButton,
+  BlogCard,
+  BrandBanner,
+};

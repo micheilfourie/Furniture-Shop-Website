@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/index.js";
 
 const Contact = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;

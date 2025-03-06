@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/index.js";
 
 const Shop = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default Shop
+export default Shop;

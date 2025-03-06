@@ -3,5 +3,7 @@ import Banner from "./Banner.jsx";
 import FeaturedProducts from "./FeaturedProducts.jsx";
 import BannerDiscount from "./BannerDiscount.jsx";
 import PurchaseOnline from "./PurchaseOnline.jsx";
+import FromBlog from "./FromBlog.jsx";
+import Footer from "./Footer.jsx";
 
-export { Hero, Banner, FeaturedProducts, BannerDiscount, PurchaseOnline };
+export { Hero, Banner, FeaturedProducts, BannerDiscount, PurchaseOnline, FromBlog, Footer };

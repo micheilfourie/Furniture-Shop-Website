@@ -1,8 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Home, About, Contact, Shop, Blog, Wishlist, Checkout, ShoppingCart } from './Pages/index.js';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  Home,
+  About,
+  Contact,
+  Shop,
+  Blog,
+  Wishlist,
+  Checkout,
+  ShoppingCart,
+} from "./Pages/index.js";
 
 function App() {
-
   return (
     <Router>
       <Routes>
@@ -16,7 +24,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

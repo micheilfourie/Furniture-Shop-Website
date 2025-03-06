@@ -7,64 +7,70 @@ import Slider from "react-slick";
 const slides = [Hero1, Hero2, Hero1, Hero2];
 
 const Hero = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const sliderRef = useRef(null);
 
-    const [activeIndex, setActiveIndex] = useState(0);
-    const sliderRef = useRef(null);
+  const sliderSettings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    beforeChange: (current, next) => {
+      setActiveIndex(next);
+    },
+    dots: false,
+  };
 
-    const sliderSettings = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        speed: 1000,
-        autoplay: true,
-        autoplaySpeed: 7000,
-        beforeChange: (current, next) => {
-            setActiveIndex(next);
-        },
-        dots: false,
-    };
+  const handlePrevSlide = () => {
+    sliderRef.current.slickPrev();
+  };
 
-    const handlePrevSlide = () => {
-        sliderRef.current.slickPrev();
-    };
+  const handleNextSlide = () => {
+    sliderRef.current.slickNext();
+  };
 
-    const handleNextSlide = () => {
-        sliderRef.current.slickNext();
-    };
+  const handleDotClick = (index) => {
+    sliderRef.current.slickGoTo(index);
+    setActiveIndex(index);
+  };
 
-    return (
-        <section className="w-full pt-[80px] mx-auto overflow-hidden relative max-w-[2560px]">
+  return (
+    <section className="relative mx-auto w-full max-w-[2560px] overflow-hidden pt-[80px]">
+      <Slider ref={sliderRef} {...sliderSettings} className="relative w-full">
+        {slides.map((image, index) => (
+          <HeroSlide key={index} image={image} />
+        ))}
+      </Slider>
 
-            <Slider ref={sliderRef} {...sliderSettings} className="w-full relative">
-                {slides.map((image, index) => (
-                    <HeroSlide key={index} image={image} />
-                ))}
-            </Slider>
+      <button
+        className="hover:text-orange absolute top-1/2 left-0 z-10 -translate-y-1/2 transform p-4 text-gray-400"
+        onClick={handlePrevSlide}
+      >
+        <ChevronLeftIcon className="h-8 w-8" />
+      </button>
 
-            <button
-                className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2 p-4 text-gray-400 hover:text-orange"
-                onClick={handlePrevSlide}
-            >
-                <ChevronLeftIcon className="h-8 w-8" />
-            </button>
+      <button
+        className="hover:text-orange absolute top-1/2 right-0 z-10 -translate-y-1/2 transform p-4 text-gray-400"
+        onClick={handleNextSlide}
+      >
+        <ChevronRightIcon className="h-8 w-8" />
+      </button>
 
-            <button
-                className="absolute top-1/2 right-0 z-10 transform -translate-y-1/2 p-4 text-gray-400 hover:text-orange"
-                onClick={handleNextSlide}
-            >
-                <ChevronRightIcon className="h-8 w-8" />
-            </button>
-
-            <div className="flex justify-center items-center my-2 absolute bottom-10 right-10">
-                {slides.map((_, index) => (
-                    <button
-                        key={index}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 mx-[3px] ${activeIndex === index ? "bg-orange scale-[1.4]" : "bg-gray-400"}`}
-                    />
-                ))}
-            </div>
-        </section>
-    );
+      <div className="absolute right-10 bottom-10 my-2 flex items-center justify-center">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => handleDotClick(index)}
+            className={`mx-[3px] h-2 w-2 cursor-pointer rounded-full transition-all duration-300 ${
+              activeIndex === index ? "bg-orange scale-[1.4]" : "bg-gray-400"
+            }`}
+          />
+        ))}
+      </div>
+    </section>
+  );
 };
 
 export default Hero;

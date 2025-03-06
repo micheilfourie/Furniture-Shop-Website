@@ -1,4 +1,5 @@
-import { Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10, Product11 } from "./assets/products"
+import { Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10, Product11 } from "./assets/products/index.js"
+import { Blog1, Blog2, Blog3, Blog4, Blog6, Blog7, Blog8 } from "./assets/blog/index.js"
 
 const productList = [
     {
@@ -112,4 +113,25 @@ const productList = [
 
 ]
 
-export default productList
+const blogList = [
+    {
+        title: "Blog Title 1",
+        image: Blog1,
+        date: "12 October 2025",
+        body: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet tenetur ipsam neque obcaecati numquam labore magni deleniti voluptate natus sunt animi architecto iste odit error similique accusamus atque, iure nam."
+    },
+    {
+        title: "Blog Title 2",
+        image: Blog2,
+        date: "11 October 2025",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?"
+    },
+    {
+        title: "Blog Title 3",
+        image: Blog3,
+        date: "10 October 2025",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?"
+    }
+]
+
+export { productList, blogList }

@@ -1,11 +1,25 @@
+const CustomHeading = ({
+  title,
+  justifyCenter = true,
+  uppercase = true,
+  isSubtitle = false,
+}) => {
+  return (
+    <div
+      className={`flex flex-col justify-center ${
+        justifyCenter ? "items-center" : "items-left"
+      }`}
+    >
+      <h2
+        className={`font-extrabold text-black ${
+          isSubtitle ? "text-lg" : "text-2xl"
+        } ${uppercase ? "uppercase" : "capitalize"}`}
+      >
+        {title}
+      </h2>
+      <div className="bg-red my-2 h-[2px] w-[50px]"></div>
+    </div>
+  );
+};
 
-const CustomHeading = ({ title, justifyCenter = true, uppercase = true }) => {
-    return (
-        <div className={`flex flex-col justify-center ${justifyCenter ? "items-center" : "items-left"}`}>
-            <h2 className={`font-extrabold text-black ${uppercase ? "uppercase text-2xl" : "text-3xl capitalize"}`}>{title}</h2>
-            <div className="bg-red h-[2px] w-[50px] my-2"></div>
-        </div>
-    )
-}
-
-export default CustomHeading
+export default CustomHeading;

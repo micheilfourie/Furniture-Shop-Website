@@ -1,11 +1,11 @@
 import { Navbar } from "../Components/index.js";
 
 const Wishlist = () => {
-    return (
-        <>
-            <Navbar />
-        </>
-    )
-}
+  return (
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default Wishlist
+export default Wishlist;
