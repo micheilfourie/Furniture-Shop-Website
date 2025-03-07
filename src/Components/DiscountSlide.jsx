@@ -5,7 +5,12 @@ const DiscountSlide = ({ image }) => {
   return (
     <div className="flex w-full items-center justify-center gap-8 bg-white px-10">
       <div className="flex h-full w-full justify-start">
-        <img src={image} alt="" className="object-fit object-left" />
+        <img
+          loading="lazy"
+          src={image}
+          alt=""
+          className="object-fit object-left"
+        />
       </div>
 
       <div className="flex flex-col items-start justify-center gap-4 font-semibold text-gray-500">

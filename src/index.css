@@ -31,6 +31,4 @@ p {
 html,body {
   scroll-behavior: smooth;
   background-color: var(--color-offwhite);
-  margin: 0;
-  padding: 0;
 }

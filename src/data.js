@@ -1,5 +1,25 @@
 import { Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10, Product11 } from "./assets/products/index.js"
 import { Blog1, Blog2, Blog3, Blog4, Blog6, Blog7, Blog8 } from "./assets/blog/index.js"
+import {Chairman, ChiefMarketing, GraphicDesigner} from "./assets/team/index.js";
+  
+const teamList = [
+    {
+    image: Chairman,
+    name: "Nancy Holland",
+    position: "Chairman",
+    }, 
+    {
+    image: ChiefMarketing,
+    name: "Heather Estrada",
+    position: "Chief Marketing",
+    },
+    {
+    image: GraphicDesigner,
+    name: "Sara Knight",
+    position: "Graphic Designer",
+    }
+];
+
 
 const productList = [
     {
@@ -134,4 +154,4 @@ const blogList = [
     }
 ]
 
-export { productList, blogList }
+export { productList, blogList, teamList };

@@ -6,5 +6,7 @@ import Banner2 from "./banner2.webp"
 import DiscountBanner1 from "./discountBanner1.webp"
 import DiscountBanner2 from "./discountBanner2.webp"
 import DiscountTimed from "./discount_timed.webp"
+import PageHeaderImage from "./pageHeader.webp"
+import AboutImage from "./about.webp"
 
-export { Hero1, Hero2, Logo, Banner1, Banner2, DiscountBanner1, DiscountBanner2, DiscountTimed }
+export { Hero1, Hero2, Logo, Banner1, Banner2, DiscountBanner1, DiscountBanner2, DiscountTimed, PageHeaderImage, AboutImage }

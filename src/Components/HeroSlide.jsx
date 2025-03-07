@@ -5,6 +5,7 @@ const HeroSlide = ({ image }) => {
     <div className={`relative min-w-full`}>
       <div className="flex w-full justify-center">
         <img
+          loading="lazy"
           src={image}
           alt="HeroImg1"
           className="h-full w-full object-fill object-center"

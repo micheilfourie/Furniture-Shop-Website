@@ -13,6 +13,8 @@ import TimedDiscount from "./TimedDiscount.jsx";
 import CatagoryButton from "./CatagoryButton.jsx";
 import BlogCard from "./BlogCard.jsx";
 import BrandBanner from "./BrandBanner.jsx";
+import PageHeader from "./PageHeader.jsx";
+import TeamMemberCard from "./TeamMemberCard.jsx";
 
 export {
   Navbar,
@@ -30,4 +32,6 @@ export {
   CatagoryButton,
   BlogCard,
   BrandBanner,
+  PageHeader,
+  TeamMemberCard,
 };

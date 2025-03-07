@@ -12,7 +12,12 @@ const Banner = () => {
     <section className="mx-auto mt-20 mb-10 flex h-[400px] w-full max-w-screen-2xl items-center justify-center gap-10 px-10">
       <div className="h-full bg-white transition-all duration-300 ease-in-out hover:shadow-lg">
         <div className="relative flex h-full items-center justify-center">
-          <img src={Banner1} alt="" className="object-fill object-center" />
+          <img
+            loading="lazy"
+            src={Banner1}
+            alt=""
+            className="object-fill object-center"
+          />
 
           <div className="absolute top-6 flex w-full justify-between px-6">
             <ItemTag tagType="new" />
@@ -32,7 +37,7 @@ const Banner = () => {
 
       <div className="relative h-full w-[60%] bg-white transition-all duration-300 ease-in-out hover:shadow-lg">
         <div className="flex h-full items-center justify-center">
-          <img src={Banner2} alt="" />
+          <img loading="lazy" src={Banner2} alt="" />
         </div>
 
         <div className="absolute top-1/2 left-1/2 max-w-[400px] -translate-y-1/2 pr-10">

@@ -18,6 +18,7 @@ const ProductCard = ({ image, isSale, isNew, price, name, rating }) => {
           </div>
 
           <img
+            loading="lazy"
             src={image}
             alt={`${name}Img`}
             className="h-full w-full object-fill object-center"

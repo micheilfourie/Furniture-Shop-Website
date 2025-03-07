@@ -7,6 +7,7 @@ const BrandBanner = () => {
     <div className="mx-auto flex max-w-screen-xl translate-y-[30px] flex-wrap items-center justify-evenly bg-white p-6 shadow-md">
       {brandList.map((brand, index) => (
         <img
+          loading="lazy"
           key={index}
           src={brand}
           alt={`brand${index + 1}`}

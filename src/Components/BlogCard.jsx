@@ -10,6 +10,7 @@ const BlogCard = ({ title, image, date, body }) => {
   return (
     <div className="mx-auto flex w-full max-w-[500px] flex-col gap-4 bg-white p-6 transition-all duration-300 ease-in-out hover:shadow-lg">
       <img
+        loading="lazy"
         src={image}
         alt=""
         className="h-[200px] w-full object-fill object-center"

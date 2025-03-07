@@ -38,7 +38,7 @@ const TimedDiscount = () => {
   return (
     <div className="flex h-full w-full flex-col items-center justify-between bg-white">
       <div className="flex w-full items-center justify-center p-4">
-        <img src={DiscountTimed} alt="Discount Timer" />
+        <img loading="lazy" src={DiscountTimed} alt="Discount Timer" />
       </div>
 
       <div className="w-full">

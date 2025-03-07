@@ -12,7 +12,7 @@ const Navbar = () => {
       <BurgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
 
       <Link to={"/"}>
-        <img src={Logo} alt="Logo" />
+        <img loading="lazy" src={Logo} alt="Logo" />
       </Link>
 
       <Link to="/shoppingcart">
