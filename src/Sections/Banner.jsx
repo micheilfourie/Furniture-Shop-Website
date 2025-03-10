@@ -1,15 +1,10 @@
-import {
-  Banner1,
-  Banner2,
-  DiscountBanner1,
-  DiscountBanner2,
-} from "../assets/index.js";
+import { Banner1, Banner2 } from "../assets/index.js";
 import { ButtonMain, ItemTag } from "../Components/index.js";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <section className="mx-auto mt-20 mb-10 flex h-[400px] w-full max-w-screen-2xl items-center justify-center gap-10 px-10">
+    <section className="mx-auto mt-20 mb-10 grid min-h-[400px] w-full max-w-screen-2xl grid-cols-[1fr_2fr] items-center justify-center gap-10 px-10 max-lg:grid-cols-1">
       <div className="h-full bg-white transition-all duration-300 ease-in-out hover:shadow-lg">
         <div className="relative flex h-full items-center justify-center">
           <img
@@ -35,7 +30,7 @@ const Banner = () => {
         </div>
       </div>
 
-      <div className="relative h-full w-[60%] bg-white transition-all duration-300 ease-in-out hover:shadow-lg">
+      <div className="relative h-full bg-white transition-all duration-300 ease-in-out hover:shadow-lg">
         <div className="flex h-full items-center justify-center">
           <img loading="lazy" src={Banner2} alt="" />
         </div>

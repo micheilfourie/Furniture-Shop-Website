@@ -151,6 +151,30 @@ const blogList = [
         image: Blog3,
         date: "10 October 2025",
         body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?"
+    },
+    {
+        title: "Blog Title 4",
+        image: Blog4,
+        date: "9 October 2025",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?" 
+    },
+    {
+        title: "Blog Title 6",
+        image: Blog6,
+        date: "7 October 2025",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?"
+    },
+    {
+        title: "Blog Title 7",
+        image: Blog7,
+        date: "6 October 2025",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?"
+    },
+    {
+        title: "Blog Title 8",
+        image: Blog8,
+        date: "5 October 2025",
+        body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur pariatur asperiores eius impedit, magnam ipsa ex odio! Assumenda porro architecto atque sapiente maiores rerum nisi distinctio dolorum, velit ducimus inventore?"
     }
 ]
 

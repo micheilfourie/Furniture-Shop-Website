@@ -5,7 +5,7 @@ const TeamMembers = () => {
   return (
     <div className="mx-auto max-w-screen-2xl">
       <CustomHeading title="Team Members" />
-      <div className="mt-10 mb-20 flex flex-wrap justify-center gap-10">
+      <div className="mt-10 mb-10 flex justify-center gap-4 px-10 max-lg:flex-col">
         {teamList.map((member, index) => (
           <TeamMemberCard
             key={index}

@@ -8,5 +8,7 @@ import Footer from "./Footer.jsx";
 import AboutMain from "./AboutMain.jsx";
 import TeamMembers from "./TeamMembers.jsx";
 import ContactMain from "./ContactMain.jsx";
+import BlogMain from "./BlogMain.jsx";
+import ShopMain from "./ShopMain.jsx";
 
-export { Hero, Banner, FeaturedProducts, BannerDiscount, PurchaseOnline, FromBlog, Footer, AboutMain, TeamMembers, ContactMain };
+export { Hero, Banner, FeaturedProducts, BannerDiscount, PurchaseOnline, FromBlog, Footer, AboutMain, TeamMembers, ContactMain, BlogMain, ShopMain };

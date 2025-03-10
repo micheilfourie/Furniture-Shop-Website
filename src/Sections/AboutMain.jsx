@@ -2,7 +2,7 @@ import { AboutImage } from "../assets";
 
 const AboutMain = () => {
   return (
-    <div className="mx-auto my-20 grid w-full max-w-[1450px] grid-cols-1 items-center gap-10 bg-white p-10 text-black lg:grid-cols-2">
+    <div className="mx-auto my-10 grid w-full max-w-[1450px] grid-cols-1 items-center gap-10 bg-white p-10 text-black lg:grid-cols-2">
       <img src={AboutImage} alt="" />
       <div className="bg-offwhite flex flex-col gap-4 p-10 lg:w-[165%] lg:-translate-x-[40%]">
         <h1 className="text-lg font-bold uppercase">About Hurst</h1>

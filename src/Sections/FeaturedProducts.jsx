@@ -1,15 +1,31 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { CustomHeading, ProductCard } from "../Components/index.js";
 import Slider from "react-slick";
 import { productList } from "../data.js";
 
 const featuredProducts = productList.filter((product) => product.isFeatured);
 
+const useWindowWidth = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowWidth;
+};
+
 const FeaturedProducts = () => {
+  const windowWidth = useWindowWidth();
   const sliderRef = useRef(null);
 
+  const slidesToShow = windowWidth >= 1200 ? 4 : windowWidth >= 768 ? 3 : 1;
+
   const sliderSettings = {
-    slidesToShow: 4,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     infinite: true,
     speed: 500,

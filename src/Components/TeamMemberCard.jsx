@@ -8,13 +8,13 @@ import {
 
 const TeamMemberCard = ({ image, name, position }) => {
   return (
-    <div className="flex max-w-[320px] flex-col items-center justify-center gap-6 bg-white p-10 text-black transition-all duration-300 ease-in-out hover:shadow-lg">
+    <div className="flex min-w-[280px] flex-col items-center justify-center gap-6 bg-white p-10 text-black transition-all duration-300 ease-in-out hover:shadow-lg">
       <img src={image} alt="" className="size-30" />
       <div className="flex flex-col items-center gap-2">
         <h3 className="text-xl font-bold uppercase">{name}</h3>
         <h5 className="text-md uppercase">{position}</h5>
       </div>
-      <p className="text-center text-sm">
+      <p className="max-w-[300px] text-center text-sm">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
         accusantium in asperiores saepe sint. Natus, expedita!
       </p>

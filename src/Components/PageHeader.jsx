@@ -9,7 +9,7 @@ const PageHeader = ({ pageHeading, breadcrumb = pageHeading }) => {
           loading="lazy"
           src={PageHeaderImage}
           alt=""
-          className="h-[300px]"
+          className="h-[300px] object-cover object-center"
         />
       </div>
 
@@ -18,7 +18,7 @@ const PageHeader = ({ pageHeading, breadcrumb = pageHeading }) => {
           {pageHeading}
         </h1>
 
-        <h3 className="text-md absolute bottom-4 left-4 px-10 text-center text-white uppercase">
+        <h3 className="text-md absolute bottom-4 left-4 px-10 text-center text-white uppercase max-md:px-0">
           <Link
             to="/"
             className="cursor-pointer px-2 font-semibold hover:text-orange-200"

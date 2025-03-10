@@ -36,10 +36,13 @@ const TimedDiscount = () => {
   }, []);
 
   return (
-    <div className="flex h-full w-full flex-col items-center justify-between bg-white">
-      <div className="flex w-full items-center justify-center p-4">
-        <img loading="lazy" src={DiscountTimed} alt="Discount Timer" />
-      </div>
+    <div className="flex h-full w-full flex-col items-center justify-between bg-white p-3">
+      <img
+        loading="lazy"
+        src={DiscountTimed}
+        alt="Discount Timer"
+        className="object-cente mb-3 h-[200px] w-full object-cover"
+      />
 
       <div className="w-full">
         <h3 className="text-md text-center font-semibold text-black uppercase">
@@ -50,7 +53,7 @@ const TimedDiscount = () => {
         </p>
       </div>
 
-      <div className="flex w-full items-center justify-evenly py-4">
+      <div className="flex w-full items-center justify-center gap-6 py-4">
         {Object.entries(timeLeft).map(([label, value], index) => (
           <div key={index} className="text-center">
             <div className="border-red mb-1 flex h-12 w-12 items-center justify-center rounded-full border text-lg font-bold text-gray-500">

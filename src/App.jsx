@@ -6,7 +6,6 @@ import {
   Shop,
   Blog,
   Wishlist,
-  Checkout,
   ShoppingCart,
 } from "./Pages/index.js";
 
@@ -21,7 +20,6 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/shoppingcart" element={<ShoppingCart />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/checkout" element={<Checkout />} />
       </Routes>
     </Router>
   );

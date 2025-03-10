@@ -15,12 +15,10 @@ const Navbar = () => {
         <img loading="lazy" src={Logo} alt="Logo" />
       </Link>
 
-      <Link to="/shoppingcart">
-        <ShoppingCartIcon className="hover:text-orange size-8 transition-colors duration-200 ease-in-out" />
-      </Link>
+      <ShoppingCartIcon className="hover:text-orange size-8 cursor-pointer transition-colors duration-200 ease-in-out" />
 
       <nav
-        className={`fixed top-0 left-0 -z-10 h-full w-56 bg-white text-black ${
+        className={`fixed top-0 left-0 -z-10 h-full w-[250px] bg-white text-black ${
           !menuOpen ? "translate-x-[-100%]" : ""
         } transition-all duration-500 ease-in-out`}
       >
@@ -31,7 +29,7 @@ const Navbar = () => {
           <NavMenuLink link="/contact" name="Contact" />
           <NavMenuLink link="/shop" name="Shop" />
           <NavMenuLink link="/wishlist" name="Wishlist" />
-          <NavMenuLink link="/checkout" name="Checkout" />
+          <NavMenuLink link="/shoppingcart" name="Shopping Cart" />
         </ul>
       </nav>
     </nav>

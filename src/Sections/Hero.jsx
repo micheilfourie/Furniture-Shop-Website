@@ -45,20 +45,20 @@ const Hero = () => {
       </Slider>
 
       <button
-        className="hover:text-orange absolute top-1/2 left-0 z-10 -translate-y-1/2 transform p-4 text-gray-400"
+        className="hover:text-orange absolute top-1/2 left-0 z-10 -translate-y-1/2 transform p-4 text-gray-400 max-md:hidden"
         onClick={handlePrevSlide}
       >
         <ChevronLeftIcon className="h-8 w-8" />
       </button>
 
       <button
-        className="hover:text-orange absolute top-1/2 right-0 z-10 -translate-y-1/2 transform p-4 text-gray-400"
+        className="hover:text-orange absolute top-1/2 right-0 z-10 -translate-y-1/2 transform p-4 text-gray-400 max-md:hidden"
         onClick={handleNextSlide}
       >
         <ChevronRightIcon className="h-8 w-8" />
       </button>
 
-      <div className="absolute right-10 bottom-10 my-2 flex items-center justify-center">
+      <div className="absolute right-4 bottom-4 my-2 flex items-center justify-center max-md:right-1/2 max-md:bottom-0 max-md:translate-x-1/2">
         {slides.map((_, index) => (
           <button
             key={index}
