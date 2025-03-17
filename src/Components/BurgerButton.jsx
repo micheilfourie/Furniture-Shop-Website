@@ -1,7 +1,7 @@
-const BurgerButton = ({ menuOpen, setMenuOpen }) => {
+const BurgerButton = ({ menuOpen, handleMenuToggle }) => {
   return (
     <button
-      onClick={() => setMenuOpen(!menuOpen)}
+      onClick={handleMenuToggle}
       className="relative hover:cursor-pointer"
     >
       <div className="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden transition-all duration-200">

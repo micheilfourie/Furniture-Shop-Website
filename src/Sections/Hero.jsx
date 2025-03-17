@@ -45,14 +45,14 @@ const Hero = () => {
       </Slider>
 
       <button
-        className="hover:text-orange absolute top-1/2 left-0 z-10 -translate-y-1/2 transform p-4 text-gray-400 max-md:hidden"
+        className="hover:text-orange absolute top-1/2 left-0 z-10 -translate-y-1/2 transform cursor-pointer p-4 text-gray-400 max-md:hidden"
         onClick={handlePrevSlide}
       >
         <ChevronLeftIcon className="h-8 w-8" />
       </button>
 
       <button
-        className="hover:text-orange absolute top-1/2 right-0 z-10 -translate-y-1/2 transform p-4 text-gray-400 max-md:hidden"
+        className="hover:text-orange absolute top-1/2 right-0 z-10 -translate-y-1/2 transform cursor-pointer p-4 text-gray-400 max-md:hidden"
         onClick={handleNextSlide}
       >
         <ChevronRightIcon className="h-8 w-8" />

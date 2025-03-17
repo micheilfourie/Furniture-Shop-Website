@@ -52,26 +52,26 @@ const ContactMain = () => {
         <input
           type="text"
           placeholder="Enter Your Name"
-          className="border-red border p-3 outline-0"
+          className="border border-gray-200 p-3 outline-0"
         />
         <input
           type="email"
           placeholder="Enter Your Email"
-          className="border-red border p-3 outline-0"
+          className="border border-gray-200 p-3 outline-0"
         />
         <textarea
           type="text"
           placeholder="Enter Your Message"
-          className="border-red h-[215px] resize-none border p-3 outline-0"
+          className="h-[215px] resize-none border border-gray-200 p-3 outline-0"
         />
         <div>
-          <ButtonMain name="Submit" />
+          <ButtonMain name="Submit" isFullWidth={true} />
         </div>
       </div>
 
       <div className="w-[60%] p-10 max-lg:w-full max-lg:p-0">
         <iframe
-          className="border-orange h-[800px] w-full border max-lg:h-[600px] max-sm:h-[400px]"
+          className="h-[800px] w-full max-lg:h-[600px] max-sm:h-[400px]"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96703.48933474459!2d-74.04692658955925!3d40.76237572299312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f0710ab5eb%3A0x164a1e643b2fb871!2sGreen%20Tower%20Development!5e0!3m2!1sen!2sza!4v1741351203613!5m2!1sen!2sza"
           width="600"
           height="450"

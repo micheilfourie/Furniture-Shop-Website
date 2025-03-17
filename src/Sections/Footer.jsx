@@ -3,7 +3,7 @@ import { CustomHeading, ButtonMain } from "../Components/index.js";
 const Footer = () => {
   return (
     <footer className="mx-auto w-full bg-white text-black">
-      <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-x-16 gap-y-10 px-10 pt-20 pb-10 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
+      <div className="font-montserrat mx-auto grid max-w-screen-xl grid-cols-1 gap-x-16 gap-y-10 px-10 pt-20 pb-10 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.5fr]">
         <div>
           <CustomHeading
             title="Contact Us"
@@ -11,7 +11,7 @@ const Footer = () => {
             isSubtitle={true}
           />
           <ul className="flex flex-col gap-4 py-4">
-            <li className="flex gap-2">
+            <li className="flex gap-4">
               <span className="w-[70px] font-semibold">Address:</span>
               28 Green Tower,
               <br />
@@ -22,12 +22,12 @@ const Footer = () => {
               USA
             </li>
 
-            <li className="flex gap-2">
+            <li className="flex gap-4">
               <span className="w-[70px] font-semibold">Phone: </span>
               012-345-6789
             </li>
 
-            <li className="flex gap-2">
+            <li className="flex gap-4">
               <span className="w-[70px] font-semibold">Email: </span>
               hurst@example.com
             </li>

@@ -8,6 +8,7 @@ const ButtonMain = ({
 }) => {
   return (
     <button
+      onClick={action}
       className={`group border-orange relative inline-flex h-[50px] ${isFullWidth ? "w-full" : "w-[135px]"} items-center justify-center overflow-hidden border-[2px] bg-white px-2 py-3 font-medium transition-all hover:bg-white`}
     >
       <Link to={link}>

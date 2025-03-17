@@ -29,6 +29,5 @@ p {
 }
 
 html,body {
-  scroll-behavior: smooth;
   background-color: var(--color-offwhite);
 }

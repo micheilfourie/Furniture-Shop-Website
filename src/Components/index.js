@@ -15,6 +15,11 @@ import BlogCard from "./BlogCard.jsx";
 import BrandBanner from "./BrandBanner.jsx";
 import PageHeader from "./PageHeader.jsx";
 import TeamMemberCard from "./TeamMemberCard.jsx";
+import ShoppingCartTable from "./ShoppingCartTable.jsx";
+import WishlistTable from "./WishlistTable.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
+import BillingDetails from "./BillingDetails.jsx";
+import CartModal from "./CartModal.jsx";
 
 export {
   Navbar,
@@ -34,4 +39,9 @@ export {
   BrandBanner,
   PageHeader,
   TeamMemberCard,
+  ShoppingCartTable,
+  WishlistTable,
+  ScrollToTop,
+  BillingDetails,
+  CartModal,
 };

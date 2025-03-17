@@ -10,5 +10,7 @@ import TeamMembers from "./TeamMembers.jsx";
 import ContactMain from "./ContactMain.jsx";
 import BlogMain from "./BlogMain.jsx";
 import ShopMain from "./ShopMain.jsx";
+import ShoppingCartMain from ".//ShoppingCartMain.jsx";
+import CheckoutMain from "./CheckoutMain.jsx";
 
-export { Hero, Banner, FeaturedProducts, BannerDiscount, PurchaseOnline, FromBlog, Footer, AboutMain, TeamMembers, ContactMain, BlogMain, ShopMain };
+export { Hero, Banner, FeaturedProducts, BannerDiscount, PurchaseOnline, FromBlog, Footer, AboutMain, TeamMembers, ContactMain, BlogMain, ShopMain, ShoppingCartMain, CheckoutMain };
