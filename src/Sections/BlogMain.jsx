@@ -7,7 +7,7 @@ import {
 
 const BlogMain = () => {
   return (
-    <div className="mx-auto flex w-full max-w-[1450px] flex-col justify-center gap-10 p-10 text-black">
+    <div className="mx-auto flex w-full max-w-[1450px] flex-col justify-center gap-10 p-10 text-black max-sm:px-4">
       <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
         {blogList.map((blog, index) => (
           <BlogCard
