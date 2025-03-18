@@ -32,7 +32,7 @@ const BannerDiscount = () => {
   };
 
   return (
-    <section className="mx-auto mt-20 mb-10 grid min-h-[400px] w-full max-w-screen-2xl grid-cols-[2fr_1fr] items-center justify-center gap-10 px-10 max-lg:grid-cols-1">
+    <section className="mx-auto mt-20 mb-10 grid min-h-[400px] w-full max-w-screen-2xl grid-cols-[2fr_1fr] items-center justify-center gap-10 px-10 max-lg:grid-cols-1 max-sm:mt-0 max-sm:px-4">
       <div className="relative flex h-[400px] items-center justify-center overflow-hidden bg-white p-6 transition-all duration-300 ease-in-out hover:shadow-lg">
         <div className="w-full max-w-[700px]">
           <Slider ref={sliderRef} {...sliderSettings} className="w-full">

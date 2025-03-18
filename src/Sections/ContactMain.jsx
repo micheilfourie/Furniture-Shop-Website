@@ -4,7 +4,7 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 const ContactMain = () => {
   return (
     <div className="mx-auto my-10 flex max-w-[1450px] justify-center bg-white max-lg:flex-col-reverse">
-      <div className="flex w-[50%] flex-col gap-6 py-10 pl-10 max-lg:w-full max-lg:pr-10">
+      <div className="flex w-[50%] flex-col gap-6 py-10 pl-10 max-lg:w-full max-lg:pr-10 max-sm:px-4">
         <CustomHeading
           title="Contact Details"
           isSubtitle={true}

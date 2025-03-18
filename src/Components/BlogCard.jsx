@@ -13,7 +13,7 @@ const BlogCard = ({ title, image, date, body }) => {
         loading="lazy"
         src={image}
         alt=""
-        className="h-[200px] w-full object-fill object-center"
+        className="h-[200px] w-full object-cover object-center"
       />
 
       <div className="flex gap-3">

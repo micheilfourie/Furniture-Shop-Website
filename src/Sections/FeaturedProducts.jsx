@@ -43,7 +43,7 @@ const FeaturedProducts = () => {
 
   return (
     <section className="mx-auto w-full max-w-screen-2xl py-10">
-      <div className="mb-10">
+      <div className="mb-10 max-sm:mb-5">
         <CustomHeading title="Featured Products" />
       </div>
 

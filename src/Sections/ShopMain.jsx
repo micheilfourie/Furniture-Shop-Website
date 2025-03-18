@@ -7,7 +7,7 @@ import {
 
 const ShopMain = () => {
   return (
-    <div className="mx-auto flex w-full max-w-[1450px] flex-col justify-center gap-10 p-10 text-black">
+    <div className="mx-auto flex w-full max-w-[1450px] flex-col justify-center gap-10 p-10 text-black max-sm:px-4">
       <div className="flex w-full items-center justify-between gap-4 bg-white py-4 text-sm max-md:flex-col-reverse max-md:items-start">
         <div className="flex items-center gap-4 px-10">
           <p className="hover:text-orange cursor-pointer">Categories</p>

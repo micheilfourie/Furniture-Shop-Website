@@ -30,7 +30,7 @@ const CheckoutMain = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-10 bg-white p-10 text-black max-md:grid-cols-1">
+    <div className="grid grid-cols-2 gap-10 bg-white p-10 text-black max-md:grid-cols-1 max-sm:px-4">
       <div className="flex flex-col gap-4">
         <CustomHeading
           title="Billing Details"

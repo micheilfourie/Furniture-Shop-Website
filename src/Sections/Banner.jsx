@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <section className="mx-auto mt-20 mb-10 grid min-h-[400px] w-full max-w-screen-2xl grid-cols-[1fr_2fr] items-center justify-center gap-10 px-10 max-lg:grid-cols-1">
+    <section className="mx-auto mt-20 mb-10 grid min-h-[400px] w-full max-w-screen-2xl grid-cols-[1fr_2fr] items-center justify-center gap-10 px-10 max-lg:grid-cols-1 max-sm:mt-10 max-sm:px-4">
       <div className="h-full bg-white transition-all duration-300 ease-in-out hover:shadow-lg">
         <div className="relative flex h-full items-center justify-center">
           <img
@@ -19,9 +19,9 @@ const Banner = () => {
             <h3 className="text-xl font-semibold text-black">$50.00</h3>
           </div>
 
-          <div className="absolute bottom-6 flex w-full justify-between px-6 text-black max-sm:bottom-3 max-sm:px-3">
+          <div className="absolute bottom-6 flex w-full items-end justify-between px-6 text-black max-sm:bottom-3 max-sm:px-3">
             <div className="flex flex-col justify-center">
-              <h4 className="text-lg font-bold">Product Name</h4>
+              <h4 className="max-sm:text-md text-lg font-bold">Product Name</h4>
               <p className="text-md">Furnature</p>
             </div>
 

@@ -28,9 +28,9 @@ const PurchaseOnline = () => {
 
   return (
     <section className="mx-auto w-full max-w-screen-2xl py-10">
-      <CustomHeading title="Purchase Online at Hurst" />
+      <CustomHeading title="Purchase Online" />
 
-      <div className="flex items-center justify-center gap-6 py-6">
+      <div className="flex items-center justify-center gap-6 px-4 py-6 max-sm:mx-auto max-sm:flex-col max-sm:gap-0">
         <CatagoryButton
           action={filterProductAll}
           catagory={catagory}
@@ -51,7 +51,7 @@ const PurchaseOnline = () => {
         />
       </div>
 
-      <div className="mx-10 grid grid-cols-1 items-center justify-center gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="mx-10 grid grid-cols-1 items-center justify-center gap-3 max-sm:mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {filteredList.slice(0, 4 * 2).map((product, index) => (
           <ProductCard
             key={index}
