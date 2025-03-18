@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed z-30 flex h-[80px] w-full items-center justify-between bg-white px-10 text-black">
+    <nav className="fixed z-30 flex h-[80px] w-full items-center justify-between bg-white px-10 text-black max-md:px-4">
       <BurgerButton menuOpen={menuOpen} handleMenuToggle={handleMenuToggle} />
 
       <Link to={"/"}>
@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`fixed top-0 left-0 -z-10 h-full w-[250px] bg-white text-black ${
+        className={`fixed top-0 left-0 -z-10 h-full w-[240px] bg-white text-black ${
           !menuOpen ? "translate-x-[-100%]" : ""
         } transition-all duration-500 ease-in-out`}
       >

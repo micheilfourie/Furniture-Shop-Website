@@ -51,7 +51,7 @@ const PurchaseOnline = () => {
         />
       </div>
 
-      <div className="mx-10 grid grid-cols-2 items-center justify-center gap-3 md:grid-cols-3 lg:grid-cols-4">
+      <div className="mx-10 grid grid-cols-1 items-center justify-center gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {filteredList.slice(0, 4 * 2).map((product, index) => (
           <ProductCard
             key={index}

@@ -3,11 +3,12 @@ import { ButtonMain } from "../Components/index.js";
 
 const CartModal = () => {
   return (
-    <div className="flex flex-col border-t border-gray-200">
-      <p className="p-6 text-end">
-        You have <span className="text-red">03 items</span> in your cart
+    <div className="flex flex-col">
+      <p className="p-6 text-center">
+        You have <span className="text-red font-semibold">3 items</span> in your
+        cart
       </p>
-      <div className="max-h-[400px] overflow-y-auto border-t border-gray-200">
+      <div className="max-h-[400px] overflow-y-auto border-y border-gray-200">
         <table className={"bg-white"}>
           <tbody className="divide-y divide-gray-200">
             {productList.slice(0, 3).map((product, index) => (

@@ -14,12 +14,12 @@ const Banner = () => {
             className="object-fill object-center"
           />
 
-          <div className="absolute top-6 flex w-full justify-between px-6">
+          <div className="absolute top-6 flex w-full justify-between px-6 max-sm:top-3 max-sm:px-3">
             <ItemTag tagType="new" />
             <h3 className="text-xl font-semibold text-black">$50.00</h3>
           </div>
 
-          <div className="absolute bottom-6 flex w-full justify-between px-6 text-black">
+          <div className="absolute bottom-6 flex w-full justify-between px-6 text-black max-sm:bottom-3 max-sm:px-3">
             <div className="flex flex-col justify-center">
               <h4 className="text-lg font-bold">Product Name</h4>
               <p className="text-md">Furnature</p>
@@ -37,7 +37,7 @@ const Banner = () => {
 
         <div className="absolute top-1/2 left-1/2 max-w-[400px] -translate-y-1/2 pr-10">
           <Link to={"/about"}>
-            <h2 className="hover:text-orange text-3xl font-[700] text-black uppercase transition-colors duration-300 ease-in-out">
+            <h2 className="hover:text-orange text-3xl font-[700] text-black uppercase transition-colors duration-300 ease-in-out max-sm:text-xl">
               Design By Hurst Modern -<span className="text-orange"> 2025</span>
             </h2>
           </Link>

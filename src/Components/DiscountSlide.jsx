@@ -12,7 +12,7 @@ const DiscountSlide = ({ image }) => {
       />
 
       <div className="flex flex-col items-start justify-center gap-4 font-semibold text-gray-500 max-sm:items-center max-sm:text-center">
-        <h1 className="text-red text-4xl font-bold uppercase">
+        <h1 className="text-red text-4xl font-bold uppercase max-sm:text-2xl">
           Discount - 50%
         </h1>
         <p className="text-xs font-[500]">

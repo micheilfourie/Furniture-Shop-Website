@@ -4,7 +4,7 @@ const brandList = [Brand1, Brand2, Brand3, Brand4];
 
 const BrandBanner = () => {
   return (
-    <div className="mx-auto flex max-w-screen-xl translate-y-[30px] flex-wrap items-center justify-evenly bg-white p-6 shadow-md">
+    <div className="mx-auto flex max-w-screen-xl translate-y-[30px] flex-wrap items-center justify-evenly bg-white p-6 shadow-md max-sm:p-2">
       {brandList.map((brand, index) => (
         <img
           loading="lazy"

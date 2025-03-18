@@ -55,7 +55,7 @@ const ShoppingCartMain = () => {
     <div>
       <PageHeader pageHeading={activeTab} />
 
-      <div className="mx-auto flex w-full max-w-[1450px] flex-col justify-center gap-10 p-10 text-black max-md:px-4">
+      <div className="mx-auto flex w-full max-w-[1450px] flex-col justify-center gap-10 p-10 text-black max-md:px-4 max-sm:gap-4 max-sm:px-0 max-sm:py-4">
         <div className="grid grid-cols-3 items-center justify-center gap-10 max-md:grid-cols-1 max-md:gap-4">
           {tabs.map((tab, index) => (
             <button
