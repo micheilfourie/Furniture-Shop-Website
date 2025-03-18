@@ -11,7 +11,7 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Furniture-Shop-Website">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
